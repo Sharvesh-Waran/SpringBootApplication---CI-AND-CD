@@ -1,5 +1,5 @@
 # DevOps-Example
-This is a sample Spring Boot Application, used to explain the Jenkins pipeline, in creating a full CI/CD flow using docker too.
+This is a Spring Boot Application, used to explain the Jenkins pipeline, in creating a full CI/CD flow using docker too.
 
 # Using Jenkins with Docker
 First of all to use jenkins with docker, we will have to know that as we are running Jenkins inside a docker container, and we need access to docker to
