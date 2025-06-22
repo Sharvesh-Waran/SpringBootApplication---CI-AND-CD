@@ -1,17 +1,6 @@
 # DevOps-Example
 This is a sample Spring Boot Application, used to explain the Jenkins pipeline, in creating a full CI/CD flow using docker too.
 
-# Jenkins 
-Jenkins is an open source automation server written in Java. Jenkins helps to automate the non-human part of the software development process,
- with continuous integration and facilitating technical aspects of continuous delivery. It is a server-based system that runs in servlet containers 
- such as Apache Tomcat.
- 
-# Docker 
-
-Docker is a collection of interoperating software-as-a-service and platform-as-a-service offerings that employ operating-system-level virtualization 
-to cultivate development and delivery of software inside standardized software packages called containers. The software that hosts the containers 
-is called Docker Engine.
-
 # Using Jenkins with Docker
 First of all to use jenkins with docker, we will have to know that as we are running Jenkins inside a docker container, and we need access to docker to
 build our services images, so first of all let's build a Jenkins image with docker installed inside it. Let's check the dockerfile to 
@@ -41,8 +30,12 @@ Now that the docker image has already been built, we can run the Jenkins in a do
 
 $ docker container run -d -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock jenkins-docker
 
-# Building Spring Boot Application
-The Sample application built here has the maven jar plugin, so in order to build that as a jar, we just have to do the command:
+![image](https://github.com/user-attachments/assets/74e157ed-a3db-4ddd-9540-8ea625652051)
 
-$ mvn clean install
+
+![image](https://github.com/user-attachments/assets/628118e9-6aca-448f-8aa9-c8e3fb03ab58)
+
+
+![image](https://github.com/user-attachments/assets/89bdd740-6e95-4b5d-a345-d0fb9e749547)
+
 
